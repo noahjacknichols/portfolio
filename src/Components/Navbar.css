@@ -1,0 +1,12 @@
+.main-nav {
+    color: white;
+}
+
+.main-nav-active {
+    color: tomato;
+}
+
+nav {
+    height: 1000px;
+}
+
