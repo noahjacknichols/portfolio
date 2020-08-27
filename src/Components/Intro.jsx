@@ -1,5 +1,41 @@
 import React from 'react';
+import githubCommits from 'github-commits/lib/github-commits';
+import { get } from 'react-scroll/modules/mixins/scroller';
 var GithubCommits = require("github-commits");
+var ghCommits = new GithubCommits();
+
+var x = -1;
+
+
+
+
+async function getData(){
+    let temp ="uhoh";
+    try{
+        
+        return await ghCommits.forUser("noahjacknichols").currentWeekCommits()
+        
+
+        return temp;
+        //return correctly
+        
+    } catch(error){ 
+        console.log(error);
+    }
+
+    return "stinky";
+    
+
+}
+
+
+async function waitForProcess(){
+    let test = await getData();
+    console.log("test is:"+JSON.stringify(test))
+    console.log(test.requests)
+    
+    
+}
 
 
 
@@ -11,58 +47,42 @@ export default class Portfolio extends React.Component{
             error: null,
             isfinishedLoading: false,
             items: [],
-            x: 0
+            commits: -1
         };
     }
 
+
     
-    getCommits() {
-        var gitCommits = new GithubCommits();
-        var x = 1;
-        return gitCommits.forUser("noahjacknichols")
-        .currentWeekCommits()
-        .sumCommits(function(sum){
-            console.log(sum);
-            x = sum;
-            
-        });
+
+
+    componentDidMount() {
+        let x = waitForProcess();
         
+        
+        
+            
+    
     }
 
-    // componentDidMount() {
-    //     fetch("https://api.example.com/items")
-    //       .then(res => res.json())
-    //       .then(
-    //         (result) => {
-    //           this.setState({
-    //             isLoaded: true,
-    //             items: result.items
-    //           });
-    //         },
-    //         // Note: it's important to handle errors here
-    //         // instead of a catch() block so that we don't swallow
-    //         // exceptions from actual bugs in components.
-    //         (error) => {
-    //           this.setState({
-    //             isLoaded: true,
-    //             error
-    //           });
-    //         }
-    //       )
-    // }
+    componentDidUpdate(){
+        this.forceUpdate();
+    }
+
 
     render(){
-        const {error, isfinishedLoading, items} = this.state;
-        this.getCommits();
-        if(error){
+
+        const {error, isfinishedLoading, items, commits} = this.state;
+        console.log("state is:" + this.state.isfinishedLoading)
+        
+        if(commits === -1){
             return <div>these are not the droids you are looking for...</div>
         }else {
             return(
                 <div id="container">
-                    <div id="name">Hey, I'm Noah</div>
-                    <div id="github">This month i've made {this.getCommits()} pr's</div>
-                    <div id="blog">Written 4 blog posts</div>
-                    <div id="coffee">and had 27 cups of coffee</div>
+                    
+                    <div id="github">{commits} commits</div>
+                    
+                    
                 </div>
             );
         }
