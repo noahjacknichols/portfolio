@@ -4,13 +4,13 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Portfolio from './Components/Portfolio';
 import Intro from './Components/Intro';
-
+import {Container, Row, Col} from 'react-bootstrap';
 function App() {
   return ( 
-    <div className="App">
-      <Navbar/>
-      <Intro/>
-    </div>
+      <div>
+        <Navbar/>
+        <Intro/>
+      </div>
 
   );
 }
