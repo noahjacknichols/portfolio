@@ -1,20 +1,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Navbar.css';
+import './Navbar.css'
 import { Link, animateScroll as scroll } from "react-scroll";
 import {Container, Row, Col} from 'react-bootstrap';
 
 class Navbar extends React.Component {
 
-    scrollToTop = () => {
-        scroll.scrollToTop();
-    };
+    
 
     render(){
         return(
-            <Container fluid>
-                <Row>
-                    <Col>
+            
+                <Row noGutters={true}>
+                    <Col xs={12}>
                         <nav className="nav" id="navbar">
                             <div className="nav-content">
                                 <ul className="nav-items">
@@ -74,7 +72,8 @@ class Navbar extends React.Component {
                         </nav>
                     </Col>
                 </Row>
-            </Container>
+            
+            
         );
     }
 }

@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Signika:wght@520&display=swap");
 
+
+
 .main-nav {
     color: white;
 }
@@ -7,10 +9,18 @@
 .main-nav-active {
     color: tomato;
 }
-
-nav {
+.nav-content{
+    width:100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 !important;
+}
+nav{
     font-family: 'Signika', sans-serif;
-    height: 100px;
+    width:100%;
+
+    
+    
 }
 
 ul {
