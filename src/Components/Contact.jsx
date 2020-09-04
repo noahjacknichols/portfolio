@@ -19,6 +19,7 @@ export default class Contact extends React.Component{
     onButtonPress(){
         console.log(this.state);
 
+
     }
 
 
@@ -26,7 +27,7 @@ export default class Contact extends React.Component{
         return(
             
                 <Row>
-                    <Col xs={12}>
+                    <Col xs={{ span: 10, offset: 1}}>
                         <Form>
                             <Form.Group controlId="formBasicEmail">
                                 <Form.Label>Email address</Form.Label>
@@ -40,7 +41,7 @@ export default class Contact extends React.Component{
                         </Form>
                         
                     </Col>
-                    <Col xs={12}>
+                    <Col xs={{ span: 10, offset: 1}}>
                         <Button variant="primary" onClick={() => this.onButtonPress()} type="submit">
                             Send
                         </Button>

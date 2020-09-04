@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Signika:wght@520&display=swap");
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
 .main-nav {
     color: white;
 }
@@ -14,35 +13,62 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin: 0 !important;
+    
+    
 }
-nav{
-    font-family: 'Signika', sans-serif;
-    width:100%;
-    color:white;
+
+
+.logo{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 48px;
+    
+    margin-left: 20px;
+    padding-top: 15px;
+    /* background-color: white; */
+    /* letter-spacing: 5px; */
+    
 }
+
+.nav-items{
+    padding-top: 15px;
+    vertical-align:middle;
+    align-items: center;
+    justify-content: center;
+}
+.nav-item{
+    vertical-align:middle;
+    float:right;
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+    font-size: 16px;
+    
+    color: white;
+    text-align: center;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+
+    text-decoration: none;
+}
+
+.extraleft{
+    padding-left: 10px;
+}
+
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #FEDC4f;
 }
 
-li {
-    float: left;
-}
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover{
-    background-color: #111;
+.nav-item:hover{
+    background-color: black;
 }
 
 

@@ -1,8 +1,7 @@
 import React from 'react';
-
-import githubCommits from 'github-commits/lib/github-commits';
+import './Intro.css';
 import { get } from 'react-scroll/modules/mixins/scroller';
-import {Container, Row, Col} from 'react-bootstrap';
+import { Row, Col} from 'react-bootstrap';
 
 
 
@@ -14,7 +13,7 @@ export default class Portfolio extends React.Component{
         this.state = {
             error: null,
             isfinishedLoading: false,
-            commits: "quite a few",
+            commits: "22",
             coffee: "10"
         };
     }
@@ -39,9 +38,34 @@ export default class Portfolio extends React.Component{
         return(
             
                 <Row>
-                    <Col xs={6} ><div>Hi, I'm Noah</div></Col>
-                    <Col xs={12} ><div>this week I've made {this.state.commits} commits</div></Col>
-                    <Col xs={12}><div>and I've brewed {this.state.coffee} coffees this week</div></Col>
+                    
+                    <Col xs={{span: 5, offset: 1}}>
+                        <div className="intro">
+                            <div className="upper">
+                                <div className="upper inline">Hello, I'm </div>
+                                <div className="inline colored">Noah Nichols</div>
+                                <div className="inline">.</div>
+                            </div>
+
+                            <div className="inline">
+                                <div className="inline"> I'm an avid Software Developer based in </div>
+                                <div className="inline colored">Waterloo, Ontario</div>
+                                <div className="inline">.</div>
+                            </div>
+                            
+                            <div className="inline">
+                                <div className="inline"> This week I've made </div>
+                                <div className="inline colored">{this.state.commits}</div>
+                                <div className="inline"> commits, </div>
+                            </div>
+                            
+                            <div className="inline">
+                                <div className="inline">and I've brewed </div>
+                                <div className="inline colored">{this.state.coffee}</div>
+                                <div className="lower inline"> coffees this week</div>
+                            </div>
+                        </div>
+                    </Col>
                 </Row>
                 
                 

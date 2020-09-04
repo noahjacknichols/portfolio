@@ -1,7 +1,7 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
-import {Row, Carousel, Col, Container} from 'react-bootstrap';
+
+import {Row, Carousel, Col} from 'react-bootstrap';
 
 
 

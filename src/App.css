@@ -1,3 +1,8 @@
-.container {
- display: flex; 
+.Container {
+    margin-right : 0 !important;
+    margin-left : 0 !important;
+    padding-right : 0 !important;
+    padding-left : 0 !important;
+    height: 100%;
+    background-color: #FEDC3D;
 }

@@ -1,8 +1,7 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import './Navbar.css'
 import { Link, animateScroll as scroll } from "react-scroll";
-import {Container, Row, Col} from 'react-bootstrap';
+import { Row, Col} from 'react-bootstrap';
 
 class Navbar extends React.Component {
 
@@ -11,12 +10,17 @@ class Navbar extends React.Component {
     render(){
         return(
             
-                <Row noGutters={true}>
-                    <Col xs={12}>
+                <Row>
+                    
+                    <Col xs={3}>
+                        <div className="logo">N/N</div>
+                    </Col>
+                    <Col xs={{ span: 6, offset: 3}}>
+                        
                         <nav className="nav" id="navbar">
                             <div className="nav-content">
                                 <ul className="nav-items">
-                                    <li className="nav-item">
+                                    <li className="nav-item ">
                                         <Link 
                                             activeClass="active"
                                             to="section1"
@@ -25,7 +29,7 @@ class Navbar extends React.Component {
                                             offset={-70}
                                             duration={500}
                                             >
-                                            Home
+                                            PORTFOLIO
                                         </Link>
                                     </li>
 
@@ -38,11 +42,11 @@ class Navbar extends React.Component {
                                             offset={-70}
                                             duration={500}
                                             >
-                                            Portfolio
+                                            BLOG
                                         </Link>
                                     </li>
 
-                                    <li className="nav-item">
+                                    <li className="nav-item extraleft">
                                         <Link 
                                             activeClass="active"
                                             to="section1"
@@ -51,20 +55,7 @@ class Navbar extends React.Component {
                                             offset={-70}
                                             duration={500}
                                             >
-                                            Blog
-                                        </Link>
-                                    </li>
-
-                                    <li className="nav-item">
-                                        <Link 
-                                            activeClass="active"
-                                            to="section1"
-                                            spy={true}
-                                            smooth={true}
-                                            offset={-70}
-                                            duration={500}
-                                            >
-                                            Contact
+                                            CONTACT
                                         </Link>
                                     </li>
                                 </ul>
