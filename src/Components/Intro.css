@@ -9,7 +9,7 @@
     padding-left: 20px;
     padding-right:20px;
     /* border-radius: 15px; */
-    height: 400px;
+    height: 600px;
     letter-spacing: 0.8px;
     background-color: #341d08;
     
@@ -33,4 +33,20 @@
     font-size: 30px;
     
 }
+
+.overlap{
+    z-index: 10;
+}
+
+.imgContainer{
+    margin-top: 60px;
+    margin-left: -60px; 
+    z-index: 1;
+}
+
+.headshotImg img{
+    width: 100%;
+}
+
+
 
