@@ -39,12 +39,12 @@ export default class Portfolio extends React.Component{
             
                 <Row>
                     
-                    <Col className="overlap" xs={{span: 5, offset: 1}}>
+                    <Col className="overlap" sm={12} md={6}>
                         <div className="intro">
                             <div className="upper">
                                 <div className="upper inline">Hello, I'm </div>
-                                <div className="inline colored">Noah Nichols</div>
-                                <div className="inline">.</div>
+                                <div className="inline nameColored">Noah Nichols</div>
+                                <div className="upper inline">.</div>
                             </div>
 
                             <div className="inline">
@@ -64,9 +64,14 @@ export default class Portfolio extends React.Component{
                                 <div className="inline colored">{this.state.coffee}</div>
                                 <div className="lower inline"> coffees this week.</div>
                             </div>
+
+                            <div className="inline">
+                                <div className="inline"> I am passionate about building excellent software that improves
+                                the lives of those around me.</div>
+                            </div>
                         </div>
                     </Col>
-                    <Col className="imgContainer" xs={5}>
+                    <Col  className="imgContainer d-none d-md-block " md={6}>
                         <div className="headshotImg">
                             <img id="headshotImg" src="https://via.placeholder.com/600x800"></img>
                         </div>

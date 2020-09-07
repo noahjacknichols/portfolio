@@ -5,18 +5,31 @@ import Navbar from './Components/Navbar';
 import Portfolio from './Components/Portfolio';
 import Intro from './Components/Intro';
 import Contact from './Components/Contact';
+import Skills from './Components/Skills';
 import {Container} from 'react-bootstrap';
+
+
 function App() {
   return ( 
-      <Container className="Container" fluid>
-        
-        <Navbar/>
-        <br/>
-        <Intro/>
-        <Portfolio/>
-        <Contact/>
+      <div>
+        <div className="Container Yellow">
+          <Navbar/>
+        </div>
+        <div className="Container Yellow">
+          <Container>
+            <br/>
+            <Intro/>
+            <div className="Blank Yellow"/>
+            {/* add some form of transition image here */}
+          </Container>
+        </div>
 
-      </Container>
+        <div className="Container Brown">
+            <Skills/>
+            <Portfolio/>
+            <Contact/>
+        </div>
+      </div>
 
   );
 }

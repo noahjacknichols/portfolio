@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css'
 import { Link, animateScroll as scroll } from "react-scroll";
-import { Row, Col} from 'react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
 
 class Navbar extends React.Component {
 
@@ -9,13 +9,13 @@ class Navbar extends React.Component {
 
     render(){
         return(
-            
+            <Container className="ctn" fluid>
                 <Row>
                     
                     <Col xs={3}>
                         <div className="logo">N/N</div>
                     </Col>
-                    <Col xs={{ span: 6, offset: 3}}>
+                    <Col className=" d-none d-sm-block" sm={9} m={{ span: 6, offset: 3}}>
                         
                         <nav className="nav" id="navbar">
                             <div className="nav-content">
@@ -63,6 +63,7 @@ class Navbar extends React.Component {
                         </nav>
                     </Col>
                 </Row>
+            </Container>
             
             
         );

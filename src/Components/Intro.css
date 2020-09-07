@@ -3,25 +3,31 @@
 .intro {
     font-family: 'Signika', sans-serif;
     color: #F2F2F2;
-    padding-bottom: 4px;
-    font-size: 26px;
+    font-size: calc(16px + 0.5vw);
+    position: relative;
+    left: 2.5rem;
     /* margin-left: 10px; */
-    padding-left: 20px;
-    padding-right:20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
     /* border-radius: 15px; */
-    height: 600px;
+    min-height: calc(600px + 2vw);
+    padding-bottom: 2vw;
     letter-spacing: 0.8px;
     background-color: #341d08;
+    line-height: 220%;
+    min-width:calc(300px + 4vw);
+    
     
 }
 
 .upper {
     padding-top: 20px;
     margin-bottom: 20px;
+    font-size: calc(18px + 0.5vw);
 }
 
 .lower {
-    padding-bottom: 20px;
+    padding-bottom: 1vw;
 }
 
 .inline{
@@ -30,22 +36,43 @@
 
 .colored {
     color:  #FEDC3D;
-    font-size: 30px;
+    font-size: calc(16px + 0.5vw);
     
 }
 
+.nameColored {
+    color: #FEDC3D;
+    font-size: calc(22px + 0.5vw);
+}
+
+
+
 .overlap{
-    z-index: 10;
+    z-index: 10; 
+    min-height: calc(600px + 2vw + 5rem);
 }
 
 .imgContainer{
-    margin-top: 60px;
-    margin-left: -60px; 
-    z-index: 1;
+    position: relative;
+    left: -2.5rem;
+    top: 5rem;
+    /* margin-top: 5rem;
+    margin-left: -5rem; 
+    margin-right: 5rem;
+    min-width:300px; */
+    min-height: calc(600px + 2vw);
+    /* z-index: 1; */
 }
 
 .headshotImg img{
     width: 100%;
+    max-height: calc(600px + 1vw);
+    min-height: calc(600px + 2vw);
+    /* max-width: calc(600px + 4vw); */
+    min-width: calc(300px + 4vw);
+
+
+
 }
 
 

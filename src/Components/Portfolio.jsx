@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Portfolio.css';
 
 import {Row, Carousel, Col} from 'react-bootstrap';
 
@@ -13,9 +13,10 @@ export default class Portfolio extends React.Component{
         return(
             
 
-                <Row>
-                    <Col xs={{ span:6, offset: 3}}>
-                            <div id="section1">Portfolio:</div>
+                <Row className="portfolioContainer">
+                    <Col id="section1" xs={{ span:6, offset: 3}}>
+                        
+                            {/* <div id="section1">Portfolio:</div> */}
                         
                             <Carousel>
                                 <Carousel.Item>
