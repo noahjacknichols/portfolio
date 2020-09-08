@@ -49,7 +49,8 @@ export default class Portfolio extends React.Component{
 
                             <div className="inline">
                                 <div className="inline"> I'm an avid Software Developer based in </div>
-                                <div className="inline colored">Waterloo, Ontario</div>
+                                <div className="inline colored">Waterloo, </div>
+                                <div className="inline colored">Ontario</div>
                                 <div className="inline">.</div>
                             </div>
                             
@@ -73,7 +74,7 @@ export default class Portfolio extends React.Component{
                     </Col>
                     <Col  className="imgContainer d-none d-md-block " md={6}>
                         <div className="headshotImg">
-                            <img id="headshotImg" src="https://via.placeholder.com/600x800"></img>
+                            <img id="headshotImg" src="https://turbo.paulstamatiou.com/p/sets/africa-2018/south-serengeti/copyright-paulstamatiou_com-DSC2888-1000.jpg"></img>
                         </div>
                     </Col>
                 </Row>

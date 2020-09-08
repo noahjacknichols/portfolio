@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+
+.title{
+    color: #FEDC4f;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    margin-top: 40px;
+    margin-left: 20px;
+    letter-spacing: 3px;
+
+}
+
+
+.bullet {
+    font-family: 'Signika', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.8px;
+}

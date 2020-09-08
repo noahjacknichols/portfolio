@@ -4,14 +4,21 @@
     padding-right : 0 !important;
     padding-left : 0 !important;
     height: 100%; */
-    background-color: #FEDC3D;
+    background-color: white;
     
 }
 
 .Brown {
-    background-color: #341d08;
+    background-color: white;
 }
 
 .Blank{
     height: 40px;
+}
+
+.Triangles{
+    background-image: url(https://cdn4.iconfinder.com/data/icons/geomicons/32/672341-triangle-down-256.png);
+    background-repeat: repeat-x;
+    height: 40px;
+    z-index: 20px;
 }

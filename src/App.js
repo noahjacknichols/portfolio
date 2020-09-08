@@ -20,11 +20,14 @@ function App() {
             <br/>
             <Intro/>
             <div className="Blank Yellow"/>
+            
             {/* add some form of transition image here */}
           </Container>
+          
         </div>
+        
 
-        <div className="Container Brown">
+        <div className=" Brown">
             <Skills/>
             <Portfolio/>
             <Contact/>
