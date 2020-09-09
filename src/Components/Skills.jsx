@@ -43,11 +43,11 @@ function Skills(){
                         
                         <div className= "d-none d-md-block dashed"></div>
                         
-                        <Col s={12} ><div className="quoteTop">“</div></Col> 
-                        <Col s={12} >
-                            <div className="white langs quoteText">  </div>
+                        <Col s={12} md={1}><div className="quoteTop">“</div></Col> 
+                        <Col s={12} md={5}>
+                            <div className="white langs quoteText"> lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor </div>
                         </Col>
-                        <Col id="bottomer" s={12}><div className="quoteBottom floatRight">”</div></Col>
+                        <Col s={12} md={1}><div className="quoteBottom quoteBottomCtn">”</div></Col>
                     </Row>
                 </div>
                 
