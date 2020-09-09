@@ -19,7 +19,7 @@ class Navbar extends React.Component {
                         
                         <nav className="nav" id="navbar">
                             <div className="nav-content">
-                                <ul className="nav-items">
+                                <ul className="nav-items list">
                                     <li className="nav-item ">
                                         <Link 
                                             activeClass="active"

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Row, Col, Form, Button} from 'react-bootstrap';
+import { Row, Col, Container} from 'react-bootstrap';
 import './Contact.css';
 
 export default class Contact extends React.Component{
@@ -25,28 +25,32 @@ export default class Contact extends React.Component{
 
     render(){
         return(
-            
+            <div>
+            <Container>
                 <Row>
-                    <Col xs={{ span: 10, offset: 1}}>
-                        <Form>
-                            <Form.Group controlId="formBasicEmail">
-                                <Form.Label>Email address</Form.Label>
-                                <Form.Control type="email" name="email" onChange= {this.handleChange} placeholder="name@example.com"/>
-                            </Form.Group>
-                            <Form.Group></Form.Group>
-                            <Form.Group controlId="exampleForm.ControlTextarea1">
-                                <Form.Label>Content</Form.Label>
-                                <Form.Control as="textarea" rows="3" name="content" onChange={this.handleChange}/>
-                            </Form.Group>
-                        </Form>
-                        
-                    </Col>
-                    <Col xs={{ span: 10, offset: 1}}>
-                        <Button variant="primary" onClick={() => this.onButtonPress()} type="submit">
-                            Send
-                        </Button>
+                    <Col xs={{span: 12}}>
+                        <div className="contactTitle text-centre">Contact Me!</div>
                     </Col>
                 </Row>
+                <div className="contactContainer">
+                    <Row>
+                        
+                            <Col xs={{span: 9, offset: 3}}>
+                                <div className="white header">
+                                    Things to come...
+                                </div>
+                                
+                            </Col>
+                    </Row>
+                    <Row>
+                        
+                        
+                    </Row>
+                </div>
+                
+            </Container>    
+        </div>
+
         );
         
     }

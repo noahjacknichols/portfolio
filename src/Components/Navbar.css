@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
 
 .main-nav {
-    color: white;
+    color: #FEFBF5;
 }
 
 .ctn{
@@ -67,16 +67,16 @@
 }
 
 
-ul {
+.list {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
+    background-color: #FEFBF5;
 }
 
 
 .nav-item:hover{
-    color: #1d78bd;
+    color: #98bec8;
 }
 
