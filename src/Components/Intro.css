@@ -5,7 +5,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: #686e74;
-    font-size: calc(16px + 0.5vw);
+    font-size: min(22px, calc(16px + 0.5vw));
     position: relative;
     left: 1vw;
     /* margin-left: 10px; */
@@ -28,7 +28,7 @@
     font-weight: 800;
     margin-bottom: 20px;
     color: #2a2f35;
-    font-size: calc(42px + 0.5vw);
+    font-size: min( 54px, calc(42px + 0.5vw));
 }
 
 .lower {
@@ -54,7 +54,7 @@
     text-decoration-thickness: 200%; */
     /* font-weight: 700; */
     font-weight: 900;
-    font-size: calc(24px + 0.5vw);
+    font-size: min( 28px, calc(24px + 0.5vw));
     
 }
 

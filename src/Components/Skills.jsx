@@ -5,15 +5,15 @@ import './Skills.css';
 function Skills(){
 
     return(
-        <div>
+        <div id="section2">
             <Container>
-                <Row>
-                    <Col xs={4}>
+                <Row >
+                    <Col xs={12}>
                         <div className="title">Skills</div>
                     </Col>
                 </Row>
                 <div className="skillContainer">
-                    <Row>
+                    <Row className="skillContainer">
                         
                             <Col xs={{span: 9}}>
                                 <div className="white header">
@@ -22,32 +22,33 @@ function Skills(){
                                 
                             </Col>
                     </Row>
-                    <Row>
+                    <Row className="skillContainer">
                         <Col  sm={12} md={4}>
                             <div className="langs">I work with:</div>
                             <ul className="twoColumn">
-                                <li>React</li>
-                                <li>Node.JS</li>
-                                <li>Java</li>
-                                <li>Python</li>
-                                <li>HTML/CSS</li>
-                                <li>JavaScript</li>
-                                <li>C/C++</li>
-                                <li>PostgreSQL</li>
-                                <li>MySQL</li>
-                                <li>Bootstrap</li>
-                                <li>Docker</li>
-                                <li>Git</li>
+                                <li className="bulletRow">React</li>
+                                <li className="bulletRow">Node.JS</li>
+                                <li className="bulletRow">Java</li>
+                                <li className="bulletRow">Python</li>
+                                <li className="bulletRow">HTML/CSS</li>
+                                <li className="bulletRow">JavaScript</li>
+                                <li className="bulletRow">C/C++</li>
+                                <li className="bulletRow">PostgreSQL</li>
+                                <li className="bulletRow">MySQL</li>
+                                <li className="bulletRow">Bootstrap</li>
+                                <li className="bulletRow">Docker</li>
+                                <li className="bulletRow">Git</li>
                             </ul>
                         </Col>
                         
                         <div className= "d-none d-md-block dashed"></div>
                         
-                        <Col s={12} md={1}><div className="quoteTop">“</div></Col> 
-                        <Col s={12} md={5}>
-                            <div className="white langs quoteText"> lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor </div>
+                        <Col className="quoteCtn" s={12} md={7}>
+                            <div className="d-none d-md-block quoteTop">“</div>
+                        
+                            <div className="white langs quoteText"> I am veri smart and you should hire me. -Mahatma Ghandhi </div>
+                            <div className="d-none d-md-block quoteBottom quoteBottomCtn">”</div>
                         </Col>
-                        <Col s={12} md={1}><div className="quoteBottom quoteBottomCtn">”</div></Col>
                     </Row>
                 </div>
                 

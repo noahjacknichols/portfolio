@@ -12,21 +12,16 @@ import {Container} from 'react-bootstrap';
 function App() {
   return ( 
       <div>
-        <div className="Container Yellow">
+        <div className="Yellow">
           <Navbar/>
         </div>
-        <div className="Container Yellow">
-          <Container>
+
+        <div className="Yellow">
             <br/>
             <Intro/>
             <div className="Blank Yellow"/>
-            
-            {/* add some form of transition image here */}
-          </Container>
-          
         </div>
         
-
         <div className=" Brown">
             <Skills/>
             <Portfolio/>

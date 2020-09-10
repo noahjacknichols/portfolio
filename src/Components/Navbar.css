@@ -13,6 +13,11 @@
     padding-left : 0 !important;
 }
 
+.nav{
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
 .main-nav-active {
     color: tomato;
 }

@@ -9,7 +9,7 @@ class Navbar extends React.Component {
 
     render(){
         return(
-            <Container className="ctn" fluid>
+            <Container >
                 <Row>
                     
                     <Col xs={3}>
@@ -23,7 +23,20 @@ class Navbar extends React.Component {
                                     <li className="nav-item ">
                                         <Link 
                                             activeClass="active"
-                                            to="section1"
+                                            to="section4"
+                                            spy={true}
+                                            smooth={true}
+                                            offset={-70}
+                                            duration={500}
+                                            >
+                                            CONTACT
+                                        </Link>
+                                    </li>
+
+                                    <li className="nav-item">
+                                        <Link 
+                                            activeClass="active"
+                                            to="section3"
                                             spy={true}
                                             smooth={true}
                                             offset={-70}
@@ -33,29 +46,16 @@ class Navbar extends React.Component {
                                         </Link>
                                     </li>
 
-                                    <li className="nav-item">
-                                        <Link 
-                                            activeClass="active"
-                                            to="section1"
-                                            spy={true}
-                                            smooth={true}
-                                            offset={-70}
-                                            duration={500}
-                                            >
-                                            BLOG
-                                        </Link>
-                                    </li>
-
                                     <li className="nav-item extraleft">
                                         <Link 
                                             activeClass="active"
-                                            to="section1"
+                                            to="section2"
                                             spy={true}
                                             smooth={true}
                                             offset={-70}
                                             duration={500}
                                             >
-                                            CONTACT
+                                            SKILLS
                                         </Link>
                                     </li>
                                 </ul>

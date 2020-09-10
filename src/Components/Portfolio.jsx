@@ -10,46 +10,71 @@ export default class Portfolio extends React.Component{
         return(
             
 
-            <div>
-            <Container>
+            <div id="section3">
+            <Container className="fixMargin">
                 <Row>
-                    <Col xs={{span: 4, offset: 8}}>
-                        <div className="portfolioTitle">Work</div>
+                    <Col xs={12}>
+                        <div className="portfolioTitle" id="section1">Work</div>
                     </Col>
                 </Row>
                 <div className="portfolioContainer">
-                    <Row>
+                    <Row className="portfolioContainer">
                         
-                            <Col xs={{span: 4, offset: 8}}>
-                                <div className="white header">
-                                    oops..
+                            <Col xs={12}>
+                                <div className="white portfolioHeader">
+                                    Stay Hustlin'
                                 </div>
                                 
                             </Col>
                     </Row>
-                    <Row>
-                        <Col xs={4}>
-                            <div className="langs">I work with:</div>
-                            <ul className="twoColumn">
-                                <li>React</li>
-                                <li>Node.JS</li>
-                                <li>Java</li>
-                                <li>Python</li>
-                                <li>HTML/CSS</li>
-                                <li>JavaScript</li>
-                                <li>C/C++</li>
-                                <li>PostgreSQL</li>
-                                <li>MySQL</li>
-                                <li>Bootstrap</li>
-                            </ul>
+                    <Row className="portfolioContainer">
+                        <Col xs={12}>
+                            <div className="portfolioSubHeader">
+                                Portfolio Site
+                            </div>
                         </Col>
-                        <Col xs={1}>
-                            <div class="portfolioDashed"></div>
-                        </Col>
-                        <Col xs={6}>
-                            <div className="quote langs">henlo, is it me u r looking for??</div>
+                        <Col xs={12}>
+                            <div className="white portfolioSectionText">
+                                I spent a ton of time tinkering and designing this site and am quite proud of how it turned out. Built using React, Node.JS, good ol' CSS, and quite a few scrap sheets of paper.
+                            </div>
                         </Col>
                     </Row>
+                    <Row className="portfolioContainer">
+                        <Col xs={12}>
+                            <div className="portfolioSubHeader portSectionUpper">
+                                Java Compiler
+                            </div>
+                        </Col>
+                        <Col xs={12}>
+                            <div className="white portfolioSectionText">
+                                A Java Compiler written in pure Java that interprets and compiles LLVM Java code utilizing best practices for parsing, interpreting and compiling.
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row className="portfolioContainer">
+                        <Col xs={12}>
+                            <div className="portfolioSubHeader portSectionUpper">
+                                GreenThumb
+                            </div>
+                        </Col>
+                        <Col xs={12}>
+                            <div className="white portfolioSectionText  portfolioFooter">
+                                An Android app that helps users identify wildlife around them using Node.JS, Java and Machine Learning. 
+                            </div>
+                        </Col>
+                    </Row>
+                    {/* <Row className="portfolioContainer">
+                        <Col xs={12}>
+                            <div className="portfolioSubHeader">
+                                Project 4
+                            </div>
+                        </Col>
+                        <Col xs={12}>
+                            <div className="white portfolioSectionText portfolioFooter">
+                            Lorem Ipsum Dolor Lorem Ipsum DolorLorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor
+                            </div>
+                        </Col>
+                    </Row> */}
                 </div>
                 
             </Container>    

@@ -25,25 +25,52 @@ export default class Contact extends React.Component{
 
     render(){
         return(
-            <div>
+            <div id="section4">
             <Container>
                 <Row>
                     <Col xs={{span: 12}}>
-                        <div className="contactTitle text-centre">Contact Me!</div>
+                        <div className="contactTitle text-centre">Contact</div>
                     </Col>
                 </Row>
                 <div className="contactContainer">
                     <Row>
                         
-                            <Col xs={{span: 9, offset: 3}}>
-                                <div className="white header">
-                                    Things to come...
-                                </div>
-                                
-                            </Col>
+                        <Col xs={12}>
+                            <div className="white contactHeader">
+                                Say Hello!
+                            </div>
+                            
+                        </Col>
+                    </Row>
+                    <Row >
+                        <Col xs={12}>
+                            <div className="white contactEmail">
+                                hello@njnichols.dev
+                            </div>
+                        </Col>
+                        <Col xs={12}>
+                            <div className="or">
+                                OR
+                            </div>
+                        </Col>
                     </Row>
                     <Row>
-                        
+                        <Col xs={12}>
+                            <div>
+                                {/* <div className="contactDividerL">hello</div> */}
+                                <div className="contactText">
+                                    check me out on
+                                </div>
+                                <div className="contactDividerR"/>
+                            </div>
+                        </Col>
+                        <Col className="linkContainer" xs={12}>
+                            <div className="inline">
+                                <div className="white linkText">LinkedIn</div>
+                                <div className="white linkText and"> & </div>
+                                <div className="white linkText">Github</div>
+                            </div>
+                        </Col>
                         
                     </Row>
                 </div>
