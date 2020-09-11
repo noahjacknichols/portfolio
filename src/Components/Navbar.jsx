@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css'
-import { Link, animateScroll as scroll } from "react-scroll";
-import { Container, Row, Col} from 'react-bootstrap';
+import { Link } from "react-scroll";
+import { Row, Col} from 'react-bootstrap';
 
 class Navbar extends React.Component {
 
