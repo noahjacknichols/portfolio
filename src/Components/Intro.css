@@ -17,7 +17,7 @@
 .introTitle{
     font-family: 'Inter', sans-serif;
     font-weight: 800px;
-    font-size: min(calc(70px + 2vw, 120px));
+    font-size: min(calc(65px + 3vw), 130px);
     margin-top: 40px;
     margin-bottom: -5px;
     margin-left: 0px;
@@ -43,12 +43,12 @@
 .introSubText{
     font-family: 'Inter', sans-serif;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 26px;
     letter-spacing: 0.8px;
     margin-top: 90px;
     margin-left: 30px;
     margin-bottom: 10vw;
-    line-height: max(2vw, 150%);
+    line-height: max(min(4vw, 250%), 175%);
 }
 
 

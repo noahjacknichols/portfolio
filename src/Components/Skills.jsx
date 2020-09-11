@@ -22,7 +22,7 @@ function Skills(){
                                 
                             </Col>
                     </Row>
-                    <Row className="skillContainer">
+                    <Row className="skillContainer skillFooter">
                         <Col  sm={12} md={4}>
                             <div className="langs">I work with:</div>
                             <ul className="twoColumn">
@@ -44,10 +44,12 @@ function Skills(){
                         <div className= "d-none d-md-block dashed"></div>
                         
                         <Col className="quoteCtn" s={12} md={7}>
+                            <div className="quoteSubCtn">
                             <div className="d-none d-md-block quoteTop">“</div>
                         
-                            <div className="white langs quoteText"> Over the last half decade I have worked with a variety of languages, frameworks, and systems.</div>
+                            <div className="white langs quoteText"> Over the last six years I have developed experience in a wide assortment of languages and utilize them everyday. </div>
                             <div className="d-none d-md-block quoteBottom quoteBottomCtn">”</div>
+                            </div>
                         </Col>
                     </Row>
                 </div>
