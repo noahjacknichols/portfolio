@@ -1,6 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Signika:wght@520&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800;900&display=swap');
+
+
+
+
+.introBaseContainer{
+    margin-top: 0px !important;
+    /* height: 1000px; */
+    /* background-image: linear-gradient(#f0c92e, #f0c92e, #f0c92e, #f0c92e, #f0c92e, #f0c92e, #f0c92e, #f0c92e, #f0c92e, #f0c92e, #f0c92e, #f0c92e, #f0c92e, #f0c92e, #f0c92e, #f0c92e, #f0c92e, #f0c92e, #FEFBF5); */
+    background-color: #f0c92e;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.introTitle{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800px;
+    font-size: min(calc(70px + 2vw, 120px));
+    margin-top: 40px;
+    margin-bottom: -5px;
+    margin-left: 0px;
+    padding-right: 10px;
+    padding-left: 20px;
+    letter-spacing: 3px;
+    line-height: 0.9em;
+    z-index: 10;
+    width: 100%;
+    text-align: left;
+}
+
+.introHeader{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800; 
+    width: 100%;
+    font-size: 70px;
+    margin-top: 30px;
+    padding-left: 50px;
+    
+}
+
+.introSubText{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: 0.8px;
+    margin-top: 90px;
+    margin-left: 30px;
+    margin-bottom: 10vw;
+    line-height: max(2vw, 150%);
+}
+
+
+
+
+
+
+
+
+
 .intro {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;

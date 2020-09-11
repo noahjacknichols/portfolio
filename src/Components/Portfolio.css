@@ -8,13 +8,14 @@
 .fixMargin{
     margin-left: -15px;
     margin-right: -15px;
+    width: 100%
 }
 
 .portfolioTitle{
     
     font-family: 'Inter', sans-serif;
     font-weight: 800px;
-    font-size: 120px;
+    font-size: min(calc(80px + 2vw, 120px));
     margin-top: 80px;
     margin-bottom: -5px;
     padding-right: 2rem;
@@ -28,11 +29,17 @@
 
 }
 
+.headerPadding{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
 .portfolioHeader{
     font-family: 'Inter', sans-serif;
     font-weight: 800; 
     font-size: 62px;
     margin-top: 30px;
+    margin-bottom: 20px;
     padding-right: 50px;
     width: 100%;
     text-align: right;
@@ -52,15 +59,15 @@
 .portfolioSubHeader{
     font-family: 'Inter', sans-serif;
     font-weight: 800;
-    font-size: 50px;
-    margin-top: 20px;
+    font-size: min(30px + 2vw,40px);
+    margin-top: 30px;
     margin-left: 6vw;
     text-align: left;
     width:100%;
 }
 
 .portfolioFooter{
-    margin-bottom: 100px;
+    margin-bottom: 100px !important;
 }
 
 .portSectionUpper{
@@ -75,4 +82,5 @@
     margin-left: 12vw;
     margin-right: 10vw;
     margin-top: 10px;
+    margin-bottom: 20px;
 }

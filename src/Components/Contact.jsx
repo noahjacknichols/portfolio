@@ -50,7 +50,7 @@ export default class Contact extends React.Component{
                         </Col>
                         <Col xs={12}>
                             <div className="or">
-                                OR
+                                / OR /
                             </div>
                         </Col>
                     </Row>
@@ -66,9 +66,9 @@ export default class Contact extends React.Component{
                         </Col>
                         <Col className="linkContainer" xs={12}>
                             <div className="inline">
-                                <div className="white linkText">LinkedIn</div>
+                                <div className="white linkText"><a target="_blank" rel="noopener noreferrer" className="socialLinks" href="https://www.linkedin.com/in/noah-nichols/">LinkedIn</a></div>
                                 <div className="white linkText and"> & </div>
-                                <div className="white linkText">Github</div>
+                                <div className="white linkText"><a target="_blank" rel="noopener noreferrer" className="socialLinks" href="https://github.com/noahjacknichols?tab=repositories">Github</a></div>
                             </div>
                         </Col>
                         

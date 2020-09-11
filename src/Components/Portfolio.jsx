@@ -13,7 +13,7 @@ export default class Portfolio extends React.Component{
             <div id="section3">
             <Container className="fixMargin">
                 <Row>
-                    <Col xs={12}>
+                    <Col className='headerPadding' xs={12}>
                         <div className="portfolioTitle" id="section1">Work</div>
                     </Col>
                 </Row>

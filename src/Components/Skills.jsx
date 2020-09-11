@@ -15,7 +15,7 @@ function Skills(){
                 <div className="skillContainer">
                     <Row className="skillContainer">
                         
-                            <Col xs={{span: 9}}>
+                            <Col xs={12}>
                                 <div className="white header">
                                     Things I Excel At
                                 </div>
@@ -46,7 +46,7 @@ function Skills(){
                         <Col className="quoteCtn" s={12} md={7}>
                             <div className="d-none d-md-block quoteTop">“</div>
                         
-                            <div className="white langs quoteText"> I am veri smart and you should hire me. -Mahatma Ghandhi </div>
+                            <div className="white langs quoteText"> Over the last half decade I have worked with a variety of languages, frameworks, and systems.</div>
                             <div className="d-none d-md-block quoteBottom quoteBottomCtn">”</div>
                         </Col>
                     </Row>

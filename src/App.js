@@ -12,9 +12,9 @@ import {Container} from 'react-bootstrap';
 function App() {
   return ( 
       <div>
-        <div className="Yellow">
+        {/* <div className="Yellow">
           <Navbar/>
-        </div>
+        </div> */}
 
         <div className="Yellow">
             <br/>

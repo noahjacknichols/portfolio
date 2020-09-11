@@ -9,7 +9,7 @@ class Navbar extends React.Component {
 
     render(){
         return(
-            <Container >
+            
                 <Row>
                     
                     <Col xs={3}>
@@ -26,7 +26,7 @@ class Navbar extends React.Component {
                                             to="section4"
                                             spy={true}
                                             smooth={true}
-                                            offset={-70}
+                                            offset={0}
                                             duration={500}
                                             >
                                             CONTACT
@@ -39,7 +39,7 @@ class Navbar extends React.Component {
                                             to="section3"
                                             spy={true}
                                             smooth={true}
-                                            offset={-70}
+                                            offset={0}
                                             duration={500}
                                             >
                                             PORTFOLIO
@@ -63,7 +63,7 @@ class Navbar extends React.Component {
                         </nav>
                     </Col>
                 </Row>
-            </Container>
+            
             
             
         );
