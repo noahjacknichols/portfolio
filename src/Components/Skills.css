@@ -5,7 +5,7 @@
     /* color: #FEDC4f; */
     font-family: 'Inter', sans-serif;
     font-weight: 800px;
-    font-size: min(calc(80px + 2vw, 120px));
+    font-size: min(calc(80px + 2vw), 120px);
     margin-top: 40px;
     margin-bottom: -5px;
     padding-left: 20px;

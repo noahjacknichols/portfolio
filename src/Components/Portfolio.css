@@ -15,7 +15,7 @@
     
     font-family: 'Inter', sans-serif;
     font-weight: 800px;
-    font-size: min(calc(80px + 2vw, 120px));
+    font-size: min(calc(80px + 2vw), 120px);
     margin-top: 80px;
     margin-bottom: -5px;
     padding-right: 2rem;
