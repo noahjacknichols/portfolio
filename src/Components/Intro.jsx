@@ -53,8 +53,9 @@ export default class Portfolio extends React.Component{
                         
                         <Row className="introContainer">
                             <Col  sm={12} md={7}>
-                            <div className="white introSubText">I am an avid Software Developer based in Waterloo, Ontario. I am passionate about building excellent software that improves
-                                    the lives of those around me.  </div>
+                            <div className="white introSubText">I am an avid Software Developer based in Waterloo, Ontario.
+                                My passion is creating innovative software to enhance and improve the lives of those around me.
+                            </div>
                             </Col>
                             
                             

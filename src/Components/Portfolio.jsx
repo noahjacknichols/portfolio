@@ -35,7 +35,7 @@ export default class Portfolio extends React.Component{
                         </Col>
                         <Col xs={12}>
                             <div className="white portfolioSectionText">
-                                I spent a ton of time tinkering and designing this site and am quite proud of how it turned out. Built using React, Node.JS, good ol' CSS, and quite a few scrap sheets of paper.
+                                Hours of creativity and effort have been spent on the development of this site. It was developed using React, Node.JS, CSS and quite a few scrap sheets of paper.
                             </div>
                         </Col>
                     </Row>

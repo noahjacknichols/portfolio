@@ -47,7 +47,7 @@ function Skills(){
                             <div className="quoteSubCtn">
                             <div className="d-none d-md-block quoteTop">“</div>
                         
-                            <div className="white langs quoteText"> Over the last six years I have developed experience in a wide assortment of languages and utilize them everyday. </div>
+                            <div className="white langs quoteText">Over the last six years, I have developed skills in a wide range of languages. My goal is to broaden my skillset and knowledge every day. </div>
                             <div className="d-none d-md-block quoteBottom quoteBottomCtn">”</div>
                             </div>
                         </Col>
