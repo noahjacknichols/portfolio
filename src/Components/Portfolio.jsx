@@ -53,7 +53,7 @@ export default class Portfolio extends React.Component{
                                         
                                     </Col>
                             </Row>
-                            <Spring config={{duration: 700, delay: 800}} from={{opacity: 0, marginLeft: "2vw"}}
+                            <Spring config={{duration: 700, delay: isVisible? 800:100}} from={{opacity: 0, marginLeft: "2vw"}}
                             to={{opacity: isVisible? 1: 0, marginLeft: "6vw"}}>
                             {props =>
                             <div>
@@ -64,7 +64,7 @@ export default class Portfolio extends React.Component{
                                     </div>
                                 </Col>
                                 <Col xs={12}>
-                                    <Spring config={{duration: 700, delay: 1600}} from={{opacity: 0}}
+                                    <Spring config={{duration: 700, delay:  isVisible? 1600:100}} from={{opacity: 0}}
                                     to={{opacity: isVisible? 1: 0}}>
                                     {props =>
                                     <div className="white portfolioSectionText" style={props}>
@@ -81,7 +81,7 @@ export default class Portfolio extends React.Component{
                                     </div>
                                 </Col>
                                 <Col xs={12}>
-                                    <Spring config={{duration: 700, delay: 1600}} from={{opacity: 0}}
+                                    <Spring config={{duration: 700, delay:  isVisible? 1600:100}} from={{opacity: 0}}
                                     to={{opacity: isVisible? 1: 0}}>
                                     {props =>
                                     <div className="white portfolioSectionText" style={props}>
@@ -98,7 +98,7 @@ export default class Portfolio extends React.Component{
                                     </div>
                                 </Col>
                                 <Col xs={12}>
-                                    <Spring config={{duration: 700, delay: 1600}} from={{opacity: 0}}
+                                    <Spring config={{duration: 700, delay: isVisible? 1600:100}} from={{opacity: 0}}
                                     to={{opacity: isVisible? 1: 0}}>
                                     {props =>
                                     <div className="white portfolioSectionText  portfolioFooter" style={props}>

@@ -47,7 +47,7 @@ export default class Contact extends React.Component{
                         <Row>
                             
                             <Col xs={12}>
-                                <Spring config={{duration: 700, delay: 200}} from={{opacity: 0, marginLeft: "0rem"}}
+                                <Spring config={{duration: 700, delay: isVisible? 200: 100}} from={{opacity: 0, marginLeft: "0rem"}}
                                 to={{opacity: isVisible ? 1 : 0, marginLeft: isVisible ? "2rem": "0rem"}}>
                                 {props =>
                                     <div className="white contactHeader" style={props}>
@@ -61,7 +61,7 @@ export default class Contact extends React.Component{
                         </Row>
                         <Row >
                             <Col xs={12}>
-                                <Spring config={{duration: 700, delay: 900}} from={{opacity: 0}}
+                                <Spring config={{duration: 700, delay: isVisible? 900:100}} from={{opacity: 0}}
                                 to={{opacity: isVisible ? 1 : 0}}>
                                 {props =>
                                     <div className="white contactEmail" style={props}>
@@ -71,7 +71,7 @@ export default class Contact extends React.Component{
                                 </Spring>
                             </Col>
                             <Col xs={12}>
-                            <Spring config={{duration: 700, delay: 1600}} from={{opacity: 0}}
+                            <Spring config={{duration: 700, delay: isVisible? 1600: 100}} from={{opacity: 0}}
                                 to={{opacity: isVisible ? 1 : 0}}>
                                 {props =>
                                     <div className="or" style={props}>
@@ -84,7 +84,7 @@ export default class Contact extends React.Component{
                         <Row>
                             <Col xs={12}>
                                 <div>
-                                    <Spring config={{duration: 700, delay: 1800}} from={{opacity: 0}}
+                                    <Spring config={{duration: 700, delay: isVisible? 1800: 100}} from={{opacity: 0}}
                                     to={{opacity: isVisible ? 1 : 0}}>
                                     {props =>
                                         <div className="contactText" style={props}>
@@ -96,7 +96,7 @@ export default class Contact extends React.Component{
                                 </div>
                             </Col>
                             <Col className="linkContainer" xs={12}>
-                            <Spring config={{duration: 700, delay: 1800}} from={{opacity: 0}}
+                            <Spring config={{duration: 700, delay: isVisible? 1800: 100}} from={{opacity: 0}}
                                 to={{opacity: isVisible ? 1 : 0}}>
                                 {props =>
                                     <div className="inline" style={props}>
