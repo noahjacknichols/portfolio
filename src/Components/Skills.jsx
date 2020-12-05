@@ -52,7 +52,7 @@ export default class Skills extends React.Component {
                       </Col>
                     </Row>
                     <Row className="skillContainer skillFooter">
-                      <Col sm={12} md={4}>
+                      <Col sm={12} lg={4} md={5}>
                         <Spring
                           config={{
                             duration: 700,
@@ -79,14 +79,16 @@ export default class Skills extends React.Component {
                             <ul className="twoColumn" style={props}>
                               <li className="bulletRow">React</li>
                               <li className="bulletRow">Node.JS</li>
+                              <li className="bulletRow">Express</li>
                               <li className="bulletRow">Java</li>
                               <li className="bulletRow">Python</li>
                               <li className="bulletRow">HTML/CSS</li>
                               <li className="bulletRow">JavaScript</li>
                               <li className="bulletRow">C/C++</li>
+                              <li className="bulletRow">MongoDB</li>
                               <li className="bulletRow">PostgreSQL</li>
                               <li className="bulletRow">MySQL</li>
-                              <li className="bulletRow">Bootstrap</li>
+                              <li className="bulletRow">Jest</li>
                               <li className="bulletRow">Docker</li>
                               <li className="bulletRow">Git</li>
                             </ul>
@@ -106,7 +108,7 @@ export default class Skills extends React.Component {
                           ></div>
                         )}
                       </Spring>
-                      <Col className="quoteCtn" s={12} md={7}>
+                      <Col className="quoteCtn" s={12} md={6} lg={7}>
                         <div className="quoteSubCtn">
                           <Spring
                             config={{
