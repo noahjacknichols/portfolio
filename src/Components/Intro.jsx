@@ -62,7 +62,7 @@ export default class Portfolio extends React.Component{
                                 <Col  sm={12} md={7}>
                                 
                                     <div className="white introSubText" >I am an avid Software Developer based in Waterloo, Ontario.
-                                        My passion is creating innovative software to enhance and improve the lives of those around me.
+                                        My passion is creating innovative software that blows clients expectations.
                                     </div>
                                 
                                 </Col>
