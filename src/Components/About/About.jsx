@@ -7,13 +7,17 @@ const endAnimation = 600;
 const About = (props) => {
   const { offset, mouseRefs } = props;
   const { mouseRef1, mouseRef2, mouseRef3, mouseRef4 } = mouseRefs;
-  const translateAmount = ((offset - startAnimation) / endAnimation) * 200;
+  const translateAmount = Math.min(
+    250,
+    ((offset - startAnimation) / endAnimation) * 200
+  );
+  const title = "Hello, I'm Noah Nichols";
   return (
     <div className={"noselect"}>
-      <div className={"height-10-rem mb-5 width-100 mt-5"}>
-        <div className={"intro-title absolute"}>Hello, I'm Noah Nichols</div>
+      <div className={"mb-5 width-100 mt-5"}>
+        <div className={"intro-title"}>Hello, I'm Noah Nichols</div>
       </div>
-      <div className="intro-text">
+      <div className="intro-text ">
         <div className={"intro-gradient text-left"} ref={mouseRef1}>
           <div
             className={"gradient-text"}

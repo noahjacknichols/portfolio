@@ -3,6 +3,7 @@ const Contact = (props) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [view, setView] = useState(0);
+  const [copied, setCopied] = useState(false);
   const textAreaRef = useRef();
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
@@ -25,15 +26,37 @@ const Contact = (props) => {
     console.log("submitted");
     setView(2);
   };
+
+  useEffect(() => {
+    if (copied === true) {
+      // setTimeout(() => setCopied(false), 3000);
+    }
+  }, [copied]);
   return (
     <div
       className={"contact"}
       style={{ marginTop: "1rem", marginBottom: "400px", height: "400px" }}
     >
-      <div className="header mb-4">
-        <i>Got a project?</i>
+      <div className="header mb-1">
+        <i>Let's get in contact</i>
       </div>
-      {view === 0 && (
+      {/* <div
+        className="sub-header mb-4"
+        onClick={() => {
+          setCopied(true);
+        }}
+      >
+        Send me a message
+      </div> */}
+      <div
+        onClick={() => {
+          window.location = "mailto:hello@njnichols.dev";
+        }}
+        className={"sub-header"}
+      >
+        hello@njnichols.dev
+      </div>
+      {/* {view === 0 && (
         <input
           value={title}
           onChange={(e) => {
@@ -44,7 +67,7 @@ const Contact = (props) => {
         />
       )}
       {view === 1 && (
-        <div
+        <textarea
           ref={textAreaRef}
           className={"textbox stretch"}
           value={description}
@@ -52,7 +75,6 @@ const Contact = (props) => {
             setDescription(e.target.value);
           }}
           placeholder={"Description..."}
-          contentEditable
         />
       )}
       {view > 1 && <div className={"thank-you"}>Thank you</div>}
@@ -69,7 +91,7 @@ const Contact = (props) => {
         >
           {view === 0 ? "Continue" : "Submit"}
         </div>
-      )}
+      )} */}
     </div>
   );
 };

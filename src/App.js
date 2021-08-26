@@ -37,9 +37,13 @@ function App() {
   const getCoords = (event) => {
     const height = window.innerHeight;
     const width = window.innerWidth;
-    let translateWidth = Math.round(((event.pageX - width / 2) / width) * 100);
-    let translateHeight = Math.round(
-      ((event.pageY - height / 2) / height) * 100
+    let translateWidth = Math.min(
+      50,
+      Math.round(((event.pageX - width / 2) / width) * 100)
+    );
+    let translateHeight = Math.min(
+      50,
+      Math.round(((event.pageY - height / 2) / height) * 100)
     );
     if (
       mouseRef1?.current &&
@@ -47,10 +51,11 @@ function App() {
       mouseRef3?.current &&
       mouseRef4?.current
     ) {
-      if (window.innerWidth < 600) {
+      if (window.innerWidth < 800) {
         translateWidth = 0;
         translateHeight = 0;
       }
+
       mouseRef1.current.style.transform = `translate3d(${
         translateWidth / 1.5
       }px, ${translateHeight / 1.5}px, 0)`;

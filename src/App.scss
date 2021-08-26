@@ -129,7 +129,7 @@ body {
     animation: grain 8s steps(10) infinite;
     height: 300%;
     left: -50%;
-    opacity: 0.095;
+    opacity: 0.045;
     position: fixed;
     top: -110%;
     width: 300%;
@@ -156,15 +156,29 @@ body {
     border: 4px solid $yellow-font;
   }
 
+  @keyframes fadeInTitle {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   .intro-title {
-    font-size: 5rem;
+    font-size: calc(1.5rem + 3vw);
     color: #f5efe1;
-    font-family: "Moniqa-Italic" !important;
+    font-family: "Inter" !important;
     z-index: 2;
-    left: 10vw;
+    margin-left: calc(0px + 3vw);
     top: 0;
-    -webkit-text-stroke-width: 0.045rem;
-    -webkit-text-stroke-color: $background-color;
+    -webkit-text-stroke-width: 0.06rem;
+    -webkit-text-stroke-color: #f5efe1;
+    color: transparent;
+    animation: fadeInTitle;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    // -webkit-text-stroke-width: 0.075rem;
+    // -webkit-text-stroke-color: $background-color;
   }
 
   .intro-photo {
@@ -179,7 +193,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10rem;
+  margin-top: calc(3rem + 3vw);
+  margin-bottom: calc(3rem + 3vw);
 }
 .text-left {
   text-align: left;
@@ -196,8 +211,20 @@ body {
   margin-top: calc(-0.35rem - 3.25vw);
   margin-bottom: calc(-0.35rem - 3.25vw);
 
+  @keyframes gradient {
+    0% {
+      filter: brightness(0.45);
+      opacity: 0;
+    }
+
+    100% {
+      filter: brightness(1);
+      opacity: 1;
+    }
+  }
+
   .gradient-text {
-    font-size: calc(2rem + 8.5vw);
+    font-size: calc(1.6rem + 8vw);
     letter-spacing: 0.2rem;
     color: #f5efe1;
     vertical-align: baseline;
@@ -210,6 +237,17 @@ body {
     white-space: nowrap;
     font-family: "Raleway", sans-serif !important;
     font-weight: 600;
+    opacity: 0;
+
+    // background: -webkit-linear-gradient(
+    //   $background-color 25%,
+    //   $primary-color 50%
+    // );
+    animation: gradient;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
     background: -webkit-linear-gradient(
       $background-color 25%,
       $primary-color 50%
@@ -235,24 +273,31 @@ body {
     }
   }
   .statement {
-    font-size: 2rem;
+    font-size: calc(1.5rem + 0.5vw);
     color: #f5efe1;
     font-family: "Inter" !important;
 
-    padding: 3rem;
+    padding: calc(1.75rem + 0.5vw);
     width: 75%;
     min-width: #{"min(100vw, 350px)"};
     max-width: 1092px;
     text-align: center;
+    margin-top: calc(1rem + 6vw);
+    margin-bottom: calc(5rem + 6vw);
+    animation: fadeInTitle;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
   }
   b {
     -webkit-text-stroke-width: 0rem;
     -webkit-text-stroke-color: #f5efe1;
     color: $primary-color;
   }
-  b {
+  b.seen {
     animation: statementText;
-    animation-delay: 2s;
+    animation-delay: 0.5s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
   }
@@ -274,9 +319,11 @@ body {
     left: 0;
     width: 1rem;
     height: 1rem;
+  }
+  .quote1.seen {
     animation: quotes;
     animation-duration: 2s;
-    animation-delay: 3s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
   }
 
@@ -290,15 +337,18 @@ body {
     right: 0;
     width: 1rem;
     height: 1rem;
+  }
+
+  .quote2.seen {
     animation: quotes;
     animation-duration: 2s;
-    animation-delay: 3s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
   }
   .list-header {
     font-family: "Inter", sans-serif;
-    font-size: 2rem;
-    margin-top: 10rem;
+    font-size: calc(1.2rem + 0.75vw);
+    margin-top: 5rem;
     color: $primary-color;
   }
   .skill-list {
@@ -306,31 +356,37 @@ body {
     max-width: 1000px;
   }
 
-  // @keyframes bumpup {
-  //   from {
-  //     margin: 1rem;
-  //     // margin-top: 30px;
-  //     // opacity: 0;
-  //     // margin-left: 30px;
-  //   }
-  //   to {
-  //     margin: 0.5rem;
-  //     opacity: 1;
-  //   }
-  // }
+  @keyframes bumpup {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    80% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
   .skill-point {
     background-color: transparent;
     // border-radius: 2rem;
+    opacity: 0;
     z-index: 20;
     color: $primary-color;
     border: 2px solid $primary-color;
     padding: 0.5rem 0.9rem;
     margin: 0.5rem;
-    font-size: 1.25rem;
+    font-size: calc(0.75rem + 0.4vw);
     font-family: "Inter", sans-serif;
-    animation-duration: 2s;
+
+    // -webkit-transition: 1s;
+  }
+  .skill-point.seen {
+    animation: bumpup;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
-    -webkit-transition: 1s;
   }
 
   @keyframes fadein {
@@ -359,7 +415,15 @@ body {
 
   .header {
     font-family: "Moniqa-Italic";
-    font-size: 2rem;
+    font-size: 2.75rem;
+  }
+  .sub-header {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.45rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 0.2rem solid $primary-color;
+    font-family: "Inter";
   }
   .thank-you {
     font-size: 1.25rem;
@@ -388,8 +452,13 @@ body {
     outline: none;
     margin-bottom: 0.5rem;
     color: $primary-color;
+    resize: none;
+    overflow: auto;
   }
   .textbox:focus {
     outline: none;
+  }
+  .textbox::-webkit-scrollbar {
+    display: none;
   }
 }
