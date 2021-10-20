@@ -9,7 +9,7 @@ const About = (props) => {
   const { mouseRef1, mouseRef2, mouseRef3, mouseRef4 } = mouseRefs;
   const translateAmount = Math.min(
     250,
-    ((offset - startAnimation) / endAnimation) * 200
+    ((offset - startAnimation) / endAnimation) * 1000
   );
   const title = "Hello, I'm Noah Nichols";
   return (

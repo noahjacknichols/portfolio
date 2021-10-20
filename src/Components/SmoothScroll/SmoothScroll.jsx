@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 import "./SmoothScroll.css";
 import useWindowSize from "../../hooks/useWindowSize";
@@ -10,9 +10,20 @@ const SmoothScroll = ({ children, setHeightPercent, setOffset }) => {
   //2.
   const scrollingContainerRef = useRef();
 
+  const [interval, setInterval] = useState(false);
+  const waitForInterval = (val) => {
+    if (!interval) {
+      setInterval(true);
+      setOffset(val);
+      setTimeout(() => {
+        setInterval(false);
+      }, 1000);
+    }
+  };
+
   // 3.
   const data = {
-    ease: 0.05,
+    ease: 0.12,
     current: 0,
     previous: 0,
     rounded: 0.1,
@@ -52,7 +63,7 @@ const SmoothScroll = ({ children, setHeightPercent, setOffset }) => {
       );
     }
     if (setOffset) {
-      setOffset(Math.round(data.previous));
+      setOffset(Math.round(data.previous / 10));
     }
     scrollingContainerRef.current.style.transform = `translateY(-${data.previous}px)`;
 

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, memo } from "react";
 import { useEffect, useState } from "react";
 import "./App.scss";
 import Intro from "./Components/Intro";
@@ -33,6 +33,11 @@ function App() {
   //     </SmoothScroll>
   //   );
   // } else {
+  const updateOffset = (val) => {
+    if (offset !== val) {
+      setOffset(val);
+    }
+  };
 
   const getCoords = (event) => {
     const height = window.innerHeight;
@@ -42,7 +47,7 @@ function App() {
       Math.round(((event.pageX - width / 2) / width) * 100)
     );
     let translateHeight = Math.min(
-      50,
+      36,
       Math.round(((event.pageY - height / 2) / height) * 100)
     );
     if (
@@ -58,21 +63,25 @@ function App() {
 
       mouseRef1.current.style.transform = `translate3d(${
         translateWidth / 1.5
-      }px, ${translateHeight / 1.5}px, 0)`;
+      }px, ${translateHeight / 2}px, 0)`;
       mouseRef2.current.style.transform = `translate3d(${
         translateWidth / 2
-      }px, ${translateHeight / 2}px, 0)`;
+      }px, ${translateHeight / 2.5}px, 0)`;
       mouseRef3.current.style.transform = `translate3d(${
         translateWidth / 3
-      }px, ${translateHeight / 3}px, 0)`;
+      }px, ${translateHeight / 3.5}px, 0)`;
       mouseRef4.current.style.transform = `translate3d(${
         translateWidth / 4
-      }px, ${translateHeight / 4}px, 0)`;
+      }px, ${translateHeight / 4.5}px, 0)`;
     }
   };
+  console.log({ offset });
   return (
     <div className={"noise"} style={{ zIndex: "1" }} onMouseMove={getCoords}>
-      <SmoothScroll setHeightPercent={setHeightPercent} setOffset={setOffset}>
+      <SmoothScroll
+        setHeightPercent={setHeightPercent}
+        setOffset={updateOffset}
+      >
         <About
           offset={offset}
           mouseRefs={{ mouseRef1, mouseRef2, mouseRef3, mouseRef4 }}
@@ -85,4 +94,4 @@ function App() {
   // }
 }
 
-export default App;
+export default memo(App);
