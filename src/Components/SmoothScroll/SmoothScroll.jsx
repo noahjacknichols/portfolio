@@ -23,7 +23,7 @@ const SmoothScroll = ({ children, setHeightPercent, setOffset }) => {
 
   // 3.
   const data = {
-    ease: 0.05,
+    ease: 0.12,
     current: 0,
     previous: 0,
     rounded: 0.1,
