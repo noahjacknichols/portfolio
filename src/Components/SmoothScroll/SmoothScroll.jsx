@@ -6,6 +6,7 @@ import useWindowSize from "../../hooks/useWindowSize";
 const SmoothScroll = ({ children, setHeightPercent, setOffset }) => {
   // 1.
   const windowSize = useWindowSize();
+  windowSize.height += 100; //quick fix until i learn why useWindowSize is always shorter than what DOM really is on first render
 
   //2.
   const scrollingContainerRef = useRef();

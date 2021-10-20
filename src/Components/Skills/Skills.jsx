@@ -6,23 +6,23 @@ const Skills = (props) => {
     "Express",
     "React",
     "Redux",
+    "MongoDB",
+    "Golang",
+    "Kafka",
     "JavaScript",
     "TypeScript",
     "Python",
-    "Golang",
     "Java",
+    "React-Query",
     "HTML/CSS",
     "SASS",
     "PostgreSQL",
-    "MongoDB",
     "Redis",
     "MySQL",
     "Docker",
     "Kubernetes",
     "Git",
     "Jest",
-    "Sinon",
-    "AWS",
   ];
 
   const skillsRef = useRef();
@@ -54,7 +54,12 @@ const Skills = (props) => {
         </div>
         I'm a Software Developer based out of{" "}
         <b className={statementWasVisible ? "seen" : ""}>Waterloo, Ontario</b>.
-        I've currently been working as a{" "}
+        I'm currently building{" "}
+        <b className={statementVisible ? "seen" : ""}>cool things </b>
+        at <b className={statementWasVisible ? "seen" : ""}>Unity </b>
+        as a{" "}
+        <b className={statementWasVisible ? "seen" : ""}>Software Developer</b>.
+        I've also worked as a{" "}
         <b className={statementWasVisible ? "seen" : ""}>
           Lead Back End Developer
         </b>{" "}
