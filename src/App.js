@@ -9,30 +9,14 @@ import Skills from "./Components/Skills/Skills";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 function App() {
-  const [heightPercent, setHeightPercent] = useState(0);
+  const [_, setHeightPercent] = useState(0);
   const [offset, setOffset] = useState(0);
-  const [x, setX] = useState(undefined);
-  const [y, setY] = useState(undefined);
+
   const mouseRef1 = useRef();
   const mouseRef2 = useRef();
   const mouseRef3 = useRef();
   const mouseRef4 = useRef();
-  // const [isLoading, setLoading] = useState(true);
-  // useEffect(() => {
-  //   if (isLoading) {
-  //     setTimeout(() => {
-  //       setLoading(false);
-  //     }, 3000);
-  //   }
-  // });
 
-  // if (isLoading) {
-  //   return (
-  //     <SmoothScroll>
-  //       <Intro />;
-  //     </SmoothScroll>
-  //   );
-  // } else {
   const updateOffset = (val) => {
     if (offset !== val) {
       setOffset(val);
@@ -75,7 +59,6 @@ function App() {
       }px, ${translateHeight / 4.5}px, 0)`;
     }
   };
-  console.log({ offset });
   return (
     <div className={"noise"} style={{ zIndex: "1" }} onMouseMove={getCoords}>
       <SmoothScroll
