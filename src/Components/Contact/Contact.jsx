@@ -40,14 +40,6 @@ const Contact = (props) => {
       <div className="header mb-1">
         <i>Let's get in contact</i>
       </div>
-      {/* <div
-        className="sub-header mb-4"
-        onClick={() => {
-          setCopied(true);
-        }}
-      >
-        Send me a message
-      </div> */}
       <div
         onClick={() => {
           window.location = "mailto:hello@njnichols.dev";
@@ -56,42 +48,6 @@ const Contact = (props) => {
       >
         hello@njnichols.dev
       </div>
-      {/* {view === 0 && (
-        <input
-          value={title}
-          onChange={(e) => {
-            setTitle(e.target.value);
-          }}
-          onKeyDown={handleKeyDown}
-          placeholder={"Catchy title..."}
-        />
-      )}
-      {view === 1 && (
-        <textarea
-          ref={textAreaRef}
-          className={"textbox stretch"}
-          value={description}
-          onChange={(e) => {
-            setDescription(e.target.value);
-          }}
-          placeholder={"Description..."}
-        />
-      )}
-      {view > 1 && <div className={"thank-you"}>Thank you</div>}
-      {view < 2 && (
-        <div
-          className={"cursor-pointer"}
-          onClick={
-            view === 0
-              ? () => {
-                  setView(1);
-                }
-              : submit
-          }
-        >
-          {view === 0 ? "Continue" : "Submit"}
-        </div>
-      )} */}
     </div>
   );
 };
