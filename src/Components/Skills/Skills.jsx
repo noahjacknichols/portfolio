@@ -55,7 +55,7 @@ const Skills = (props) => {
         I'm a Software Developer based out of{" "}
         <b className={statementWasVisible ? "seen" : ""}>Waterloo, Ontario</b>.
         I'm currently building{" "}
-        <b className={statementVisible ? "seen" : ""}>cool things </b>
+        <b className={statementWasVisible ? "seen" : ""}>cool things </b>
         at <b className={statementWasVisible ? "seen" : ""}>Unity </b>
         as a{" "}
         <b className={statementWasVisible ? "seen" : ""}>Software Developer</b>.

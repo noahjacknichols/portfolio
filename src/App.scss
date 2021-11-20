@@ -166,13 +166,13 @@ body {
   }
   .intro-title {
     font-size: calc(1.5rem + 3vw);
-    color: #f5efe1;
+    color: $primary-color;
     font-family: "Inter" !important;
     z-index: 2;
     margin-left: calc(0px + 3vw);
     top: 0;
     -webkit-text-stroke-width: 0.06rem;
-    -webkit-text-stroke-color: #f5efe1;
+    -webkit-text-stroke-color: $primary-color;
     color: transparent;
     animation: fadeInTitle;
     animation-duration: 2s;
@@ -226,7 +226,7 @@ body {
   .gradient-text {
     font-size: calc(1.6rem + 8vw);
     letter-spacing: 0.2rem;
-    color: #f5efe1;
+    color: $primary-color;
     vertical-align: baseline;
     -webkit-text-size-adjust: 100%;
     width: 100%;
@@ -274,7 +274,7 @@ body {
   }
   .statement {
     font-size: calc(1.5rem + 0.5vw);
-    color: #f5efe1;
+    color: $primary-color;
     font-family: "Inter" !important;
 
     padding: calc(1.75rem + 0.5vw);
@@ -292,7 +292,7 @@ body {
   }
   b {
     -webkit-text-stroke-width: 0rem;
-    -webkit-text-stroke-color: #f5efe1;
+    -webkit-text-stroke-color: $primary-color;
     color: $primary-color;
   }
   b.seen {
@@ -313,7 +313,7 @@ body {
   .quote1 {
     opacity: 0;
     font-size: 2rem;
-    color: #f5efe1;
+    color: $primary-color;
     font-family: "Inter" !important;
     top: 0;
     left: 0;
@@ -330,7 +330,7 @@ body {
   .quote2 {
     opacity: 0;
     font-size: 2rem;
-    color: #f5efe1;
+    color: $primary-color;
     font-family: "Inter" !important;
 
     bottom: 0;
