@@ -269,6 +269,7 @@ body {
     }
     to {
       -webkit-text-stroke-width: 0.045rem;
+      -webkit-text-stroke-color: $primary-color;
       color: $background-color;
     }
   }
